@@ -76,7 +76,7 @@ install_gnparser = function(version = 'latest', force = FALSE) {
   }
 
   files = if (is_windows()) {
-    download_file('win', '.zip')
+    download_file('win-', '.zip')
   } else if (is_macos()) {
     download_file("mac", '.tar.gz')
   } else {
